@@ -1,0 +1,21 @@
+[submodule "libs/assimp"]
+	path = libs/assimp
+	url = https://github.com/assimp/assimp.git
+[submodule "libs/glad"]
+	path = libs/glad
+	url = https://github.com/DawidLokiec/glad.git
+[submodule "libs/glfw"]
+	path = libs/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "libs/stb"]
+	path = libs/stb
+	url = https://github.com/nothings/stb.git
+[submodule "ibs/glad"]
+	path = ibs/glad
+	url = https://github.com/DawidLokiec/glad.git
+[submodule "libs/glm"]
+	path = libs/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "libs/fmt"]
+	path = libs/fmt
+	url = https://github.com/fmtlib/fmt.git
