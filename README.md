@@ -1,0 +1,1 @@
+This project demonstrates skeletal animation with bone matrix calculations handled by a GPU compute shader for high performance. It allows efficient animation of 3D models by offloading calculations to the GPU. The camera is freely movable and controlled via the keyboard(W, A, S, D for positioning and arrow keys for rotation.)
