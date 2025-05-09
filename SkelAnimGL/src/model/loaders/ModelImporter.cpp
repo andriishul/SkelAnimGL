@@ -248,5 +248,5 @@ const std::shared_ptr<Model> ModelImporter::Load(const std::string& filename)
     }
     s_CachedTextures.clear();
 
-    return std::make_shared<Model>(skeleton, meshes, animations);
+    return std::make_shared<Model>(std::move(skeleton), std::move(meshes), std::move(animations));
 }

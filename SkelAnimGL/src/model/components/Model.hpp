@@ -5,7 +5,7 @@
 
 struct Model 
 {
-	explicit Model(const Skeleton& _skeleton, const std::vector<std::shared_ptr<Mesh>>& _meshes, const std::vector<Animation>& _animations);
+	explicit Model(Skeleton&& _skeleton, const std::vector<std::shared_ptr<Mesh>>&& _meshes, std::vector<Animation>&& _animations);
 	
 	const std::vector<std::shared_ptr<Mesh>> meshes;
 	const std::vector<Animation> animations;
