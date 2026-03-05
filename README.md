@@ -59,3 +59,8 @@ The scene includes a freely movable camera so you can view the animated model fr
 ### Purpose
 
 The goal of this project is to demonstrate how skeletal animation can be **offloaded to the GPU** for efficient parallel computation of bone matrices, reducing CPU workload and enabling smoother animations for complex rigs.
+
+> **Important:** Clone the repository recursively to include all submodules and avoid missing libraries:
+
+```bash
+git clone --recursive https://github.com/andriishul/SkelAnimGL.git
