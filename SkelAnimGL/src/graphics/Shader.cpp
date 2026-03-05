@@ -1,0 +1,19 @@
+#include "Shader.hpp"
+#include <openGL/glShader.hpp>
+const std::string SHADERS_PATH = "C:/Users/shulg/source/repos/SkelAnimGL/SkelAnimGL/shaders/";
+
+std::shared_ptr<Shader> Shader::Get(const std::string& name)
+{
+	if (s_Shaders.find(name) == s_Shaders.end())
+		s_Shaders[name] = std::shared_ptr<Shader>(new glShader(SHADERS_PATH + name + ".vs", SHADERS_PATH + name + ".fs"));
+	return s_Shaders[name];
+}
+std::unordered_map<std::string, std::shared_ptr<Shader>> Shader::s_Shaders;
+std::unordered_map<std::string, std::shared_ptr<ComputeShader>> ComputeShader::s_computeShaders;
+
+std::shared_ptr<ComputeShader> ComputeShader::Get(const std::string& name)
+{
+	if (s_computeShaders.find(name) == s_computeShaders.end())
+		s_computeShaders[name] = std::shared_ptr<ComputeShader>(new glComputeShader(SHADERS_PATH + name + ".cs"));
+	return s_computeShaders[name];
+}
